@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.pagina1 {
+    background-color: rgb(239, 138, 37);
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    
+}
+.boxes {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.img{
+    
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black ;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0, 3);
+}
+
+
+
+.img:hover{
+    
+
+    transform: scale(1.2); /*1 es el valor por defecto */
+    transition: all 0.9s;
+}
+
+/****************************/
+
+.pagina2{
+    background-color: rgb(239, 138, 37);
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+
+.informacion{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 0;
+  
+  
+    font-size: 1.4rem;
+}
+.contacto li{
+    padding: 8px 0;
+}
+.redes-sociales{
+    display: flex;
+    gap: 30px;
+}
+
+.imagen  {
+    min-width: auto;
+    max-width: 350px;
+    margin: 40px 15px 0 0;
+    width: 100%;
+    height: 70%;
+    background-image: url(./img/medialunas.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+}
+
+@media (min-width: 1020px ){
+    .container{
+        height: 100vh;
+    }
+    .pagina1{
+        background-color: peru;
+        
+        
+    }
+    .boxes{
+        gap: 20px;
+        flex-direction: row;
+        ;
+        
+    }
+    .img{
+        width: 180px;
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .pagina2{
+        background-color: peru;
+        gap: 80px;
+    }
+}
